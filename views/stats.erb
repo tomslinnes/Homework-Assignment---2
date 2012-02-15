@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STATS
+    </title>
+  </head>
+  <body style="background-color:#F5F5DC;">
+    <form method="GET" action="/stats" >
+      <p style="text-align:center;">
+      <b> <%= @result %></b>
+	<div style="visibility:hidden;"><input type="<%= @result %>" value="<%= @result %>" name="result"  /></div>
+	<h4  style="text-align:center;">Player Selected:<%= @player_throw %></h4>
+       <h4  style="text-align:center;"> Computer Selected:<%= @computer_throw %></h4>
+      </p>
+      <div style="text-align:center;" ><input type="submit" value="PLAY AGAIN"  /></div>
+	</br></br></br>
+      <div style="text-align:center; ">
+      Wins=	<%= @wins %>
+      <div style="visibility:hidden;"><input type="<%= @wins %>" value="<%= @wins %>" name="wins"  /></div>
+	Losses= <%= @losses %>
+	<div style="visibility:hidden;"><input type="<%= @losses %>" value="<%= @losses %>" name="losses"  /></div>
+	Ties= <%= @tie %>
+	<div style="visibility:hidden;"><input type="<%= @tie %>" value="<%= @tie %>" name="ties"  /></div>
+	</div>
+    </form>
+  </body>
+</html>
+

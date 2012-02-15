@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title> Gamepage
+  </title>
+  </head>
+  <body style="background-color:#F5F5DC;">
+  <form method="POST" action="/stats">
+         
+    <p style="text-align:center;">
+      Click on the Button to Select your choice.
+    </p>
+	<div style="text-align:center;">
+    <input type="submit" value="ROCK" name ="selected_value" />
+    <input type="submit" value="PAPER" name="selected_value" />
+    <input type="submit" value="SCISSORS" name="selected_value" />
+    <input type="submit" value="LIZARD" name="selected_value" />
+    <input type="submit" value="SPOCK" name="selected_value" />
+	</div>
+  <br/>
+	<div style="text-align:center;">
+	<div style="visibility:hidden;">Wins=	<%= @wins %></div>
+	<div style="visibility:hidden;"><input type="<%= @wins %>" value="<%= @wins %>" name="wins"  /></div>
+
+	<div style="visibility:hidden;">Losses= <%= @losses %></div>
+	<div style="visibility:hidden;"><input type="<%= @losses %>" value="<%= @losses %>" name="losses"  /></div>
+
+	<div style="visibility:hidden;">Ties= <%= @tie %></div>
+	<div style="visibility:hidden;"><input type="<%= @tie %>" value="<%= @tie %>" name="ties"  /></div>
+	</div>
+  </form>
+  </body>
+</html>
+
+
